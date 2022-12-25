@@ -8,10 +8,24 @@ use Syndesi\MongoDataStructures\Contract\DocumentInterface;
 
 class Document implements DocumentInterface
 {
+    private ?string $collection = null;
+
     /**
      * @var array<string, mixed>
      */
     private array $properties = [];
+
+    public function getCollection(): ?string
+    {
+        return $this->collection;
+    }
+
+    public function setCollection(?string $collection): DocumentInterface
+    {
+        $this->collection = $collection;
+
+        return $this;
+    }
 
     public function getIdentifier(): mixed
     {

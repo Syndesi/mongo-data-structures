@@ -6,6 +6,10 @@ namespace Syndesi\MongoDataStructures\Contract;
 
 interface DocumentInterface
 {
+    public function getCollection(): ?string;
+
+    public function setCollection(?string $collection): self;
+
     public function getIdentifier(): mixed;
 
     public function setIdentifier(mixed $identifier): self;
