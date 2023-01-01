@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Syndesi\CypherDataStructures\Trait;
+namespace Syndesi\MongoDataStructures\Trait;
 
-use Syndesi\CypherDataStructures\Exception\InvalidArgumentException;
+use Syndesi\MongoDataStructures\Exception\InvalidArgumentException;
 
 trait IdentifiersTrait
 {

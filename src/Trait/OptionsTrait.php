@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Syndesi\CypherDataStructures\Trait;
+namespace Syndesi\MongoDataStructures\Trait;
 
 trait OptionsTrait
 {
